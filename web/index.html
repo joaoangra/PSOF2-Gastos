@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gastos</title>
+</head>
+<body>
+    <header>
+        <h1>Gastos</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Informações</h2>
+            <form id="info">
+                <label for="data" name="data"></label>
+                <input type="date" name="data" required>
+                <input type="text" name="valor" placeholder="Digite o valor do seu gasto" required>
+                <input type="text" name="descricao" placeholder="Digite uma breve descrição" required>
+                <button type="submit">Cadastro</button>
+            </form>
+        </section>
+        <section>
+            <h2>Planilha</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>DATA</th>
+                        <th>VALOR</th>
+                        <th>DESCRIÇÃO</th>
+                    </tr>
+                </thead>
+                <tbody id="jvs"></tbody>
+            </table>
+        </section>
+    </main>
+    <footer id="msg">Mensagem: </footer>
+</body>
+<script src="script.js"></script>
+</html>
